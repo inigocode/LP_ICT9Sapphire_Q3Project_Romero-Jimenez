@@ -22,68 +22,73 @@
             background-color: green !important;
             color: white;
         }
+        .row-flex {
+            display: flex;
+            justify-content: space-between;
+        }
     </style>
 </head>
-<div class="row">
-    <div class="col">
-        <div class="container">
-            <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: #2C5F2D;">
-                <div class="container-fluid">
-                    <div class="navbar-brand">
-                        <a href="index.html">
-                            <img class="rounded-circle" src="line2logo.png" alt="logo" width="50px">
-                        </a>
-                        <p style="color: #FFC107;"><b>LRT2</b></p>
-                    </div>
-                    <div class="collapse navbar-collapse">
-                        <ul class="navbar-nav me-auto" style="font-size: 20px;">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="page2.html">Transit Schedule</a></li>
-                            <li class="nav-item"><a class="nav-link" href="page3.html">Contact Us</a></li>
-                        </ul>
-                        <form class="d-flex">
-                            <input class="form-control" type="text" placeholder="Search..">
-                            <button class="btn btn-warning" type="button">Search</button>
-                        </form>
-                    </div>
+<body>
+    <div class="container mt-4">
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: #2C5F2D;">
+            <div class="container-fluid">
+                <div class="navbar-brand">
+                    <a href="index.html">
+                        <img class="rounded-circle" src="line2logo.png" alt="logo" width="50px">
+                    </a>
+                    <p style="color: #FFC107;"><b>LRT2</b></p>
                 </div>
-            </nav>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav me-auto" style="font-size: 20px;">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="page2.html">Transit Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link" href="page3.html">Contact Us</a></li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control" type="text" placeholder="Search..">
+                        <button class="btn btn-warning" type="button">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <br><br><br><br>
+
+        <div class="row-flex">
+            <!-- Left Side: Bottom Text -->
+            <div id="help" class="col-6">
+                <div id="comment" class="text-center mb-4">
+                    <h1>Leave a comment</h1>
+                    <h3>We value your comments</h3>
+                </div>
+                <h6>Help</h6>
+                <p>For more information, you can contact us on Instagram: <strong>MLRT2</strong> or Twitter: <strong>@ManilaLightRailTransit2</strong></p>
+                <h6>Our Office</h6>
+                <p><strong>Main Office Address:</strong> Administration Building, Line 2 Depot, Marcos Highway, Santolan, Pasig City 1610</p>
+                <p>&copy; 2025 Romero Jose Inigo & Jimenez Sophia</p>
+            </div>
+
+            <!-- Right Side: Feedback Form Card -->
+            <div class="col-6">
+                <div class="card p-4">
+                    <h4 class="mb-3"><i>Feedback Form</i></h4>
+                    <form id="feedbackForm">
+                        <div class="mb-3">
+                            <label for="commentText" class="form-label">Your Comment</label>
+                            <textarea id="commentText" class="form-control" rows="4" placeholder="Leave a comment..."></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <button type="button" class="btn btn-primary" onclick="submitForm()">Submit</button>
+                    </form>
+                </div>
+            </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-<body class="container mt-4">
-        <div id="comment" class="text-center mb-4">
-        <h1>Leave a comment</h1>
-        <h3>We value your comments</h3>
-    </div>
-
-    <div class="card p-4">
-        <h4 class="mb-3"><i>Feedback Form</i></h4>
-        <form id="feedbackForm">
-            <div class="mb-3">
-                <label for="commentText" class="form-label">Your Comment</label>
-                <textarea id="commentText" class="form-control" rows="4" placeholder="Leave a comment..."></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" id="name" class="form-control" placeholder="Enter your name">
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" id="email" class="form-control" placeholder="Enter your email">
-            </div>
-            <button type="button" class="btn btn-primary" onclick="submitForm()">Submit</button>
-        </form>
-    </div>
-
-    <div id="help" class="mt-4">
-        <h6>Help</h6>
-        <p>For more information, you can contact us on Instagram: <strong>MLRT2</strong> or Twitter: <strong>@ManilaLightRailTransit2</strong></p>
-        <h6>Our Office</h6>
-        <p><strong>Main Office Address:</strong> Administration Building, Line 2 Depot, Marcos Highway, Santolan, Pasig City 1610</p>
-        <p>&copy; 2025 Romero Jose Inigo & Jimenez Sophia</p>
     </div>
 
     <script>
@@ -94,4 +99,5 @@
     </script>
 </body>
 </html>
+
 
