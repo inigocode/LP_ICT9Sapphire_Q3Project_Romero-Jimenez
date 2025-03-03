@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,17 +14,17 @@
             margin: 0; 
         }
         
-
+        /* Make the comment section translucent yellow */
         #comment {
-            background-color: rgba(255, 255, 0, 0.6);
+            background-color: rgba(255, 255, 0, 0.6); /* Yellow with translucency */
             color: green;
             padding: 20px;
             border-radius: 10px;
         }
 
         .card {
-            background-color: rgba(0, 128, 0, 0.6) !important; 
-            color: green; 
+            background-color: rgba(0, 128, 0, 0.6) !important; /* Green with translucency */
+            color: green; /* Keep text green */
             padding: 20px;
             border-radius: 10px;
         }
@@ -66,8 +65,15 @@
         <br><br><br><br>
 
         <div class="row-flex">
-            
+            <!-- Left Side: Comment Section Above the Feedback Form -->
             <div class="col-6">
+                <!-- Leave a comment box -->
+                <div id="comment" class="text-center mb-4">
+                    <h1>Leave a comment</h1>
+                    <h3>We value your comments</h3>
+                </div>
+
+                <!-- Feedback Form Card -->
                 <div class="card">
                     <h4 class="mb-3"><i>Feedback Form</i></h4>
                     <form id="feedbackForm">
@@ -88,12 +94,8 @@
                 </div>
             </div>
 
-            
+            <!-- Right Side: Other Info Section -->
             <div id="help" class="col-6">
-                <div id="comment" class="text-center mb-4">
-                    <h1>Leave a comment</h1>
-                    <h3>We value your comments</h3>
-                </div>
                 <h6>Help</h6>
                 <p>For more information, you can contact us on Instagram: <strong>MLRT2</strong> or Twitter: <strong>@ManilaLightRailTransit2</strong></p>
                 <h6>Our Office</h6>
