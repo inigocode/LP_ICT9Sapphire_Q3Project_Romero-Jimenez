@@ -8,23 +8,35 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <style>
          body {
-            background-image: url(line2img.jpg); 
+            background-image: url(line2.jpg); 
             background-size: cover; 
             background-position: center; 
             background-repeat: no-repeat; 
             margin: 0; 
         }
+        
+
         #comment {
-            background-color: yellow;
+            background-color: rgba(255, 255, 0, 0.6);
             color: green;
+            padding: 20px;
+            border-radius: 10px;
         }
+
         .card {
-            background-color: green !important;
-            color: white;
+            background-color: rgba(0, 128, 0, 0.6) !important; 
+            color: green; 
+            padding: 20px;
+            border-radius: 10px;
         }
+
         .row-flex {
             display: flex;
             justify-content: space-between;
+        }
+
+        .col-6 {
+            padding: 15px;
         }
     </style>
 </head>
@@ -54,9 +66,9 @@
         <br><br><br><br>
 
         <div class="row-flex">
-            <!-- Left Side: Feedback Form Card (Now on the Left) -->
+            
             <div class="col-6">
-                <div class="card p-4">
+                <div class="card">
                     <h4 class="mb-3"><i>Feedback Form</i></h4>
                     <form id="feedbackForm">
                         <div class="mb-3">
@@ -76,7 +88,7 @@
                 </div>
             </div>
 
-            <!-- Right Side: Bottom Text (Now on the Right) -->
+            
             <div id="help" class="col-6">
                 <div id="comment" class="text-center mb-4">
                     <h1>Leave a comment</h1>
@@ -99,6 +111,7 @@
     </script>
 </body>
 </html>
+
 
 
 
