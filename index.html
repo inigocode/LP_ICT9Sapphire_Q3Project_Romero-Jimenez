@@ -11,7 +11,8 @@
     
 
 
-    <style>
+<style>
+
     body {
     background-image: url('line2.jpg');
     background-repeat: no-repeat;
@@ -21,54 +22,41 @@
 } 
 
 
-     .translucent-container {
-            background: rgba(255, 255, 255, 0.8);
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            margin-left: 900px;
-            width: 60%;
-            height: 90vh;
-            position: fixed;
+.translucent-container {
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        margin-left:60%;
+        width: 60%;
+        height: 90vh;
+        position: fixed;
 
   
         }
 
 
 
-     .select-width {
+.select-width {
      	width: 40%;
      	background-color: #FFC107;
 
      }
 
 
-
-.map-container {
-      text-align: center;
-      margin-top: 20px;
-    }
-
-
-    .map-container img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    }
-
 #image {
-    margin-left: 20px; /* Adjust the value as needed */
+    margin-left: 20px; 
     position: fixed;
-    bottom: 80px;
+    bottom: 20px;
     z-index: -1;
     opacity: 0.8 ;
 }
 
 #header {
-	margin-left: 20px; /* Adjust the value as needed */
+	margin-left: 20px;
     position: fixed;
-    top: 130px;
+    padding: 10px;
+    top: 150px;
     z-index: -1;  
     background: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
@@ -76,18 +64,23 @@
    
 }
 
-    </style>
+.translucent-container2 {
+    margin-right: 100%;
+
+}
+
+
+
+</style>
 
 
 </head>
 
 
 <body>
-  
-<div class="row">
-    <div class="col">
-        <div class="container">
+<div class="container">
             <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: #2C5F2D;">
+
                 <div class="container-fluid">
                     <div class="navbar-brand">
                         <a href="index.html">
@@ -95,6 +88,9 @@
                         </a>
                         <p style="color: #FFC107;"><b>LRT2</b></p>
                     </div>
+
+
+
                     <div class="collapse navbar-collapse">
                         <ul class="navbar-nav me-auto" style="font-size: 20px;">
                             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -106,78 +102,81 @@
                             <button class="btn btn-warning" type="button">Search</button>
                         </form>
                     </div>
-                </div>
             </nav>
-        </div>
+</div>
+<br>
+
+
         
-        <br>
-        
-        <div class="container mt-5 translucent-container">
+<div class="container mt-5 translucent-container">
             <form>
                 <label><b>Leaving From:</b></label>
-                <select id="fromStation" class="form-select select-width">
-                <option value= "Select">Select</option>
-                <option value="Santolan St.">Santolan</option>
-                <option value="Katipunan St.">Katipunan</option>
-                <option value="Anonas St.">Anonas</option>
-                <option value="Cubao St.">Cubao</option>
-                <option value="Betty Go St.">Betty Go-Belmonte</option>
-                <option value="Gilmore St.">Gilmore</option>
-                <option value="J. Ruiz St.">J. Ruiz</option>
-                <option value="V. Mapa St.">V. Mapa</option>
-                <option value="Pureza St.">Pureza</option>
-                <option value="Legarda St.">Legarda</option>
-                <option value="Recto St.">Recto</option>
-                </select>
+                    <select id="fromStation" class="form-select select-width">
+                                <option value= "Select">Select</option>
+                                <option value="Santolan St.">Santolan</option>
+                                <option value="Katipunan St.">Katipunan</option>
+                                <option value="Anonas St.">Anonas</option>
+                                <option value="Cubao St.">Cubao</option>
+                                <option value="Betty Go St.">Betty Go-Belmonte</option>
+                                <option value="Gilmore St.">Gilmore</option>
+                                <option value="J. Ruiz St.">J. Ruiz</option>
+                                <option value="V. Mapa St.">V. Mapa</option>
+                                <option value="Pureza St.">Pureza</option>
+                                <option value="Legarda St.">Legarda</option>
+                                <option value="Recto St.">Recto</option>
+                    </select>
             </form>
             <br>
+
 
             <form>
                 <label><b>Going to:</b></label>
-                <select class="form-select select-width" id="toStation">
-                <option value= "Select">Select</option>
-                <option value="Santolan St.">Santolan</option>
-                <option value="Katipunan St.">Katipunan</option>
-                <option value="Anonas St.">Anonas</option>
-                <option value="Cubao St.">Cubao</option>
-                <option value="Betty Go St.">Betty Go-Belmonte</option>
-                <option value="Gilmore St.">Gilmore</option>
-                <option value="J. Ruiz St.">J. Ruiz</option>
-                <option value="V. Mapa St.">V. Mapa</option>
-                <option value="Pureza St.">Pureza</option>
-                <option value="Legarda St.">Legarda</option>
-                <option value="Recto St.">Recto</option>
-                </select>
+                        <select class="form-select select-width" id="toStation">
+                                <option value= "Select">Select</option>
+                                <option value="Santolan St.">Santolan</option>
+                                <option value="Katipunan St.">Katipunan</option>
+                                <option value="Anonas St.">Anonas</option>
+                                <option value="Cubao St.">Cubao</option>
+                                <option value="Betty Go St.">Betty Go-Belmonte</option>
+                                <option value="Gilmore St.">Gilmore</option>
+                                <option value="J. Ruiz St.">J. Ruiz</option>
+                                <option value="V. Mapa St.">V. Mapa</option>
+                                <option value="Pureza St.">Pureza</option>
+                                <option value="Legarda St.">Legarda</option>
+                                <option value="Recto St.">Recto</option>
+                     </select>
             </form>
             <br>
 
-            <div class="container">
-                <img src="ticket.jpg" alt="ticket" class="img-thumbnail" width="50%">
-            </div>
-            <br>
 
-            <div>
+        <div class="container">
+                <img src="ticket.jpg" alt="ticket" class="img-thumbnail" width="50%">
+        </div>
+        <br>
+
+
+        <div>
                 <p><b>Ticket Price:</b></p>
                 <p id="show" style="background-color: darkgreen; width: 50%; height: 10vh; font-size: 50px; text-align: center; color: white;">₱ 0.00</p>
-                <button class="btn btn-warning" onclick="calculateFare('regular')">Regular Fare</button>
+                 <button class="btn btn-warning" onclick="calculateFare('regular')">Regular Fare</button>
                 <button class="btn btn-warning" onclick="calculateFare('discounted')">Discounted Fare</button>
-            </div>
         </div>
-    </div>
+</div>
+<br>
 
 
 
-
+<div class= "container translucent-container2" >
   <div id= "header">
-  	<h1 style= "font-size: 70px; font-weight: bold; color: darkgreen">LRT Line 2</h1>
-  	<h3><b>Santolan to Recto</b></h3>
+  	<h1 style= "font-size: 55px; font-weight: bold; color: darkgreen">LRT Line 2</h1>
+  	<p style= "font-size: 30px;">Santolan to Recto</p>
   	
   </div>
 
 
 
    <div id= "image">
-        <img src="map.png" alt="map" class="img-fluid" width="50%" style = "border-radius:  10px;">
+        <img src="map.png" alt="map" class="img-fluid" width="90%">
     </div>
 
 
@@ -186,22 +185,21 @@
 
 
 
-
-
 <script>
 const fareMatrix = {
-    "Recto St.": { "Recto St.": 0, "Legarda St.": 15, "Pureza St.": 20, "V. Mapa St.": 20, "J. Ruiz St.": 20, "Gilmore St.": 25, "Betty Go St.": 25, "Cubao St.": 25, "Anonas St.": 25, "Katipunan St.": 30, "Santolan St.": 30 },
-    "Legarda St.": { "Recto St.": 15, "Legarda St.": 0, "Pureza St.": 15, "V. Mapa St.": 20, "J. Ruiz St.": 20, "Gilmore St.": 25, "Betty Go St.": 25, "Cubao St.": 25, "Anonas St.": 25, "Katipunan St.": 30, "Santolan St.": 35 },
-    "Pureza St.": { "Recto St.": 20, "Legarda St.": 15, "Pureza St.": 0, "V. Mapa St.": 15, "J. Ruiz St.": 20, "Gilmore St.": 25, "Betty Go St.": 25, "Cubao St.": 25, "Anonas St.": 25, "Katipunan St.": 30, "Santolan St.": 30 },
-    "V. Mapa St.": { "Recto St.": 20, "Legarda St.": 20, "Pureza St.": 15, "V. Mapa St.": 0, "J. Ruiz St.": 15, "Gilmore St.": 20, "Betty Go St.": 20, "Cubao St.": 25, "Anonas St.": 25, "Katipunan St.": 25, "Santolan St.": 30 },
-    "J. Ruiz St.": { "Recto St.": 20, "Legarda St.": 20, "Pureza St.": 20, "V. Mapa St.": 15, "J. Ruiz St.": 0, "Gilmore St.": 20, "Betty Go St.": 20, "Cubao St.": 20, "Anonas St.": 25, "Katipunan St.": 25, "Santolan St.": 25 },
-    "Gilmore St.": { "Recto St.": 25, "Legarda St.": 25, "Pureza St.": 25, "V. Mapa St.": 20, "J. Ruiz St.": 20, "Gilmore St.": 0, "Betty Go St.": 15, "Cubao St.": 20, "Anonas St.": 25, "Katipunan St.": 25, "Santolan St.": 25 },
-    "Betty Go St.": { "Recto St.": 25, "Legarda St.": 25, "Pureza St.": 25, "V. Mapa St.": 20, "J. Ruiz St.": 20, "Gilmore St.": 15, "Betty Go St.": 0, "Cubao St.": 15, "Anonas St.": 20, "Katipunan St.": 25, "Santolan St.": 25 },
-    "Cubao St.": { "Recto St.": 25, "Legarda St.": 25, "Pureza St.": 25, "V. Mapa St.": 25, "J. Ruiz St.": 20, "Gilmore St.": 20, "Betty Go St.": 15, "Cubao St.": 0, "Anonas St.": 15, "Katipunan St.": 20, "Santolan St.": 25 },
-    "Anonas St.": { "Recto St.": 25, "Legarda St.": 25, "Pureza St.": 25, "V. Mapa St.": 25, "J. Ruiz St.": 25, "Gilmore St.": 25, "Betty Go St.": 20, "Cubao St.": 15, "Anonas St.": 0, "Katipunan St.": 15, "Santolan St.": 20 },
-    "Katipunan St.": { "Recto St.": 30, "Legarda St.": 30, "Pureza St.": 30, "V. Mapa St.": 25, "J. Ruiz St.": 25, "Gilmore St.": 25, "Betty Go St.": 25, "Cubao St.": 20, "Anonas St.": 15, "Katipunan St.": 0, "Santolan St.": 15 },
-    "Santolan St.": { "Recto St.": 30, "Legarda St.": 35, "Pureza St.": 30, "V. Mapa St.": 30, "J. Ruiz St.": 25, "Gilmore St.": 25, "Betty Go St.": 25, "Cubao St.": 25, "Anonas St.": 20, "Katipunan St.": 15, "Santolan St.": 0 }
-
+    "Recto St.": { "Recto St.": 0, "Legarda St.": 15, "Pureza St.": 20, "V. Mapa St.": 20, "J. Ruiz St.": 20, "Gilmore St.": 25, "Betty Go St.": 25, "Cubao St.": 25, "Anonas St.": 25, "Katipunan St.": 30, "Santolan St.": 30, "Marikina St.": 35, "Antipolo St.": 35 },
+    "Legarda St.": { "Recto St.": 15, "Legarda St.": 0, "Pureza St.": 15, "V. Mapa St.": 20, "J. Ruiz St.": 20, "Gilmore St.": 25, "Betty Go St.": 25, "Cubao St.": 25, "Anonas St.": 25, "Katipunan St.": 30, "Santolan St.": 30, "Marikina St.": 35, "Antipolo St.": 35 },
+    "Pureza St.": { "Recto St.": 20, "Legarda St.": 15, "Pureza St.": 0, "V. Mapa St.": 15, "J. Ruiz St.": 20, "Gilmore St.": 25, "Betty Go St.": 25, "Cubao St.": 25, "Anonas St.": 25, "Katipunan St.": 30, "Santolan St.": 30, "Marikina St.": 30, "Antipolo St.": 30 },
+    "V. Mapa St.": { "Recto St.": 20, "Legarda St.": 20, "Pureza St.": 15, "V. Mapa St.": 0, "J. Ruiz St.": 15, "Gilmore St.": 20, "Betty Go St.": 20, "Cubao St.": 25, "Anonas St.": 25, "Katipunan St.": 25, "Santolan St.": 30, "Marikina St.": 30, "Antipolo St.": 30 },
+    "J. Ruiz St.": { "Recto St.": 20, "Legarda St.": 20, "Pureza St.": 20, "V. Mapa St.": 15, "J. Ruiz St.": 0, "Gilmore St.": 20, "Betty Go St.": 20, "Cubao St.": 20, "Anonas St.": 25, "Katipunan St.": 25, "Santolan St.": 25, "Marikina St.": 30, "Antipolo St.": 30 },
+    "Gilmore St.": { "Recto St.": 25, "Legarda St.": 25, "Pureza St.": 25, "V. Mapa St.": 20, "J. Ruiz St.": 20, "Gilmore St.": 0, "Betty Go St.": 15, "Cubao St.": 20, "Anonas St.": 20, "Katipunan St.": 20, "Santolan St.": 25, "Marikina St.": 25, "Antipolo St.": 30 },
+    "Betty Go St.": { "Recto St.": 25, "Legarda St.": 25, "Pureza St.": 25, "V. Mapa St.": 20, "J. Ruiz St.": 20, "Gilmore St.": 15, "Betty Go St.": 0, "Cubao St.": 15, "Anonas St.": 20, "Katipunan St.": 20, "Santolan St.": 25, "Marikina St.": 25, "Antipolo St.": 25 },
+    "Cubao St.": { "Recto St.": 25, "Legarda St.": 25, "Pureza St.": 25, "V. Mapa St.": 25, "J. Ruiz St.": 20, "Gilmore St.": 20, "Betty Go St.": 15, "Cubao St.": 0, "Anonas St.": 15, "Katipunan St.": 20, "Santolan St.": 20, "Marikina St.": 25, "Antipolo St.": 25 },
+    "Anonas St.": { "Recto St.": 25, "Legarda St.": 25, "Pureza St.": 25, "V. Mapa St.": 25, "J. Ruiz St.": 25, "Gilmore St.": 20, "Betty Go St.": 20, "Cubao St.": 15, "Anonas St.": 0, "Katipunan St.": 15, "Santolan St.": 20, "Marikina St.": 25, "Antipolo St.": 25 },
+    "Katipunan St.": { "Recto St.": 30, "Legarda St.": 30, "Pureza St.": 30, "V. Mapa St.": 25, "J. Ruiz St.": 25, "Gilmore St.": 20, "Betty Go St.": 20, "Cubao St.": 20, "Anonas St.": 15, "Katipunan St.": 0, "Santolan St.": 20, "Marikina St.": 25, "Antipolo St.": 25 },
+    "Santolan St.": { "Recto St.": 30, "Legarda St.": 30, "Pureza St.": 30, "V. Mapa St.": 30, "J. Ruiz St.": 25, "Gilmore St.": 25, "Betty Go St.": 25, "Cubao St.": 20, "Anonas St.": 20, "Katipunan St.": 20, "Santolan St.": 0, "Marikina St.": 15, "Antipolo St.": 20 },
+    "Marikina St.": { "Recto St.": 35, "Legarda St.": 35, "Pureza St.": 30, "V. Mapa St.": 30, "J. Ruiz St.": 30, "Gilmore St.": 25, "Betty Go St.": 25, "Cubao St.": 25, "Anonas St.": 25, "Katipunan St.": 25, "Santolan St.": 15, "Marikina St.": 0, "Antipolo St.": 20 },
+    "Antipolo St.": { "Recto St.": 35, "Legarda St.": 35, "Pureza St.": 30, "V. Mapa St.": 30, "J. Ruiz St.": 30, "Gilmore St.": 30, "Betty Go St.": 25, "Cubao St.": 25, "Anonas St.": 25, "Katipunan St.": 25, "Santolan St.": 20, "Marikina St.": 20, "Antipolo St.": 0 }
 };
 
 
@@ -217,7 +215,7 @@ function calculateFare (type) {
 
 	let baseFare = fareMatrix [fromStation]?.[toStation];
 	if (baseFare === undefined) return alert ('Invalid output!'); 
-	let finalFare = (type === "discounted")? baseFare - (baseFare * 0.8) : baseFare
+	let finalFare = (type === "discounted")? baseFare * 0.8 : baseFare
 
 	fareDisplay.textContent = "₱" + finalFare.toFixed(2);
 	fareDisplay.style.backgroundColor = "darkgreen"; 
@@ -229,7 +227,6 @@ function calculateFare (type) {
 
 
 </script>
-
 
 
 
